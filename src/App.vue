@@ -5,7 +5,7 @@
         <NavBar/>
  
 
-   
+   <p>Hello Annie</p>
 
 
       <router-view/>
