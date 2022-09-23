@@ -7,6 +7,9 @@
 
    <p>Hello Annie</p>
 
+   <p>Hello Annie</p>
+
+
 
       <router-view/>
    <FooTer/>
