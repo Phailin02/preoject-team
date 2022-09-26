@@ -3,7 +3,7 @@
     <slide />
     <v-container>
       <v-row>
-        <v-col style="padding: 35px">
+        <v-col style="padding-top: 80px; padding-bottom: 75px">
           <h2 class="mb-5" style="font-weight: 500">ສິດທິມະນຸດຂອງຄົນຫູໜວກ:</h2>
 
           <p>
@@ -15,7 +15,7 @@
             ໂດຍສະເພາະໃນຂົງເຂດຕໍ່ໄປນີ້:
           </p>
         </v-col>
-        <v-col style="padding: 30px">
+        <v-col style="padding: 30px; padding-top: 70px">
           <v-card class="d-inline-flex pa-2 mb-2" color="#297FCA" outlined>
             <div>
               <h2 class="white--text mb-1" style="font-weight: 500">
@@ -68,7 +68,7 @@
       </div>
 
       <v-row>
-        <v-col style="padding-top: 50px">
+        <v-col style="padding-top: 80px">
           <h2 class="mb-5" style="font-weight: 500">ກິດຈະກຳລ່າສຸດ:</h2>
         </v-col>
       </v-row>
@@ -194,264 +194,139 @@
           <div class="swiper-pagination"></div>
         </div>
       </v-col> -->
+      <v-col style="padding-top: 50px">
+        <v-sheet class="mx-auto" elevation="8" max-width="1135" height="400">
+          <v-slide-group v-model="model" class="pa-4" show-arrows>
+            <v-slide-item>
+              <v-card class="ma-4" height="330" width="300">
+                <template slot="progress">
+                  <v-progress-linear
+                    color="deep-purple"
+                    height="10"
+                    indeterminate
+                  ></v-progress-linear>
+                </template>
 
-      <v-sheet
-    class="mx-auto"
-    elevation="8"
-    max-width="1135"
-    height="400"
-  >
-    <v-slide-group
-      v-model="model"
-      class="pa-4"
-      active-class="primary"
-      show-arrows
-    >
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
+                <v-img height="200" src="../assets/news/new1.png"></v-img>
 
-                    <v-img
-                      height="200"
-                      src="../assets/news/new4.png"
-                    ></v-img>
+                <v-card-text>
+                  <div>
+                    ຜູ້ຮັບທຶນຊ່ວຍເຫຼືອຄົນຫູໜວກ 2020 Usher Kids
+                    ສະໜອງການອັບເດດອັນມີຄ່າຂອງໂຄງການ Usher Kids Australia
+                    Educational Video Series ຂອງເຂົາເຈົ້າ
+                    <a class="text-decoration-underline">ອ່ານເພີ່ມ></a>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-slide-item>
+            <v-slide-item v-for="n in 1" :key="n">
+              <v-card class="ma-4" height="330" width="300">
+                <template slot="progress">
+                  <v-progress-linear
+                    color="deep-purple"
+                    height="10"
+                    indeterminate
+                  ></v-progress-linear>
+                </template>
 
-                   
+                <v-img height="200" src="../assets/Banner1 1.png"></v-img>
 
-                    <v-card-text>
-                      
+                <v-card-text>
+                  <div>
+                    ເປັນການກຸສົນສະໜັບສະໜູນນັກຮົບເກົ່າ ຂອງ​ກອງ​ທັບ​ອາ​ວຸດ​,
+                    ສະ​ຖາ​ນະ​ການ​ ຢູ່​ໃນ​ອັຟກາ​ນິສຖານ
+                    ​ເປັນ​ການ​ເສຍ​ໃຈ​ຢ່າງ​ເລິກ​ເຊິ່ງສຳລັບ​ພວກ​ເຮົາ
+                    ​ແລະ​ພວກ​ທີ່​ພວກ​ເຮົາ​ສະໜັບສະໜູນ
+                    <a class="text-decoration-underline">ອ່ານເພີ່ມ></a>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-slide-item>
+            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+              <v-card class="ma-4" height="330" width="300" @click="toggle">
+                <template slot="progress">
+                  <v-progress-linear
+                    color="deep-purple"
+                    height="10"
+                    indeterminate
+                  ></v-progress-linear>
+                </template>
 
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
+                <v-img height="200" src="../assets/banner 2 1.png"></v-img>
 
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
+                <v-card-text>
+                  <div>
+                    ອັນນີ້ຂຶ້ນກັບຄວາມດັງຂອງສຽງ, ດົນປານ ໃດທີ່ເຈົ້າຖືກເປີດເຜີຍ
+                    ແລະວ່າສຽງນັ້ນມີ ຄວາມແຮງປານໃດ
+                    <a class="text-decoration-underline">ອ່ານເພີ່ມ></a>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-slide-item>
+            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+              <v-card class="ma-4" height="330" width="300" @click="toggle">
+                <template slot="progress">
+                  <v-progress-linear
+                    color="deep-purple"
+                    height="10"
+                    indeterminate
+                  ></v-progress-linear>
+                </template>
 
-                    <v-img
-                      height="200"
-                      src="../assets/Banner1 1.png"
-                    ></v-img>
+                <v-img height="200" src="../assets/news/new1.png"></v-img>
 
-                   
+                <v-card-text>
+                  <div>
+                    ປະເພດຂອງການສູນເສຍການໄດ້ຍິນການສູນເສຍການໄດ້ຍິນມີສີ່ປະເພດ:
+<a class="text-decoration-underline">ອ່ານເພີ່ມ></a>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-slide-item>
+            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+              <v-card class="ma-4" height="330" width="300" @click="toggle">
+                <template slot="progress">
+                  <v-progress-linear
+                    color="deep-purple"
+                    height="10"
+                    indeterminate
+                  ></v-progress-linear>
+                </template>
 
-                    <v-card-text>
-                      
+                <v-img height="200" src="../assets/news/new2.png"></v-img>
 
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
+                <v-card-text>
+                  <div>
+                    Small plates, salads & sandwiches - an intimate setting with
+                    12 indoor seats plus patio seating.
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-slide-item>
+            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+              <v-card class="ma-4" height="330" width="300" @click="toggle">
+                <template slot="progress">
+                  <v-progress-linear
+                    color="deep-purple"
+                    height="10"
+                    indeterminate
+                  ></v-progress-linear>
+                </template>
 
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
+                <v-img height="200" src="../assets/news/new3.png"></v-img>
 
-                    <v-img
-                      height="200"
-                      src="../assets/banner 2 1.png"
-                    ></v-img>
+                <v-card-text>
+                  <div>
+                    Small plates, salads & sandwiches - an intimate setting with
+                    12 indoor seats plus patio seating.
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-slide-item>
+          </v-slide-group>
+        </v-sheet>
+      </v-col>
 
-                   
-
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
-
-                    <v-img
-                      height="200"
-                      src="../assets/news/new1.png"
-                    ></v-img>
-
-                   
-
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
-
-                    <v-img
-                      height="200"
-                      src="../assets/news/new2.png"
-                    ></v-img>
-
-                   
-
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
-
-                    <v-img
-                      height="200"
-                      src="../assets/news/new3.png"
-                    ></v-img>
-
-                   
-
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-    </v-slide-group>
-  </v-sheet>
-
-
-    
       <v-row justify="center" style="padding: 50px">
         <v-btn class="pa-8" color="#297FCA">
           <h1 class="white--text" style="font-weight: 500">ເບິ່ງຂ່າວທັງໝົດ></h1>
@@ -523,7 +398,6 @@ export default {
 };
 </script>
 <style>
-
 v-col {
   padding: 20px;
 }
@@ -714,7 +588,6 @@ h2 {
   .swiper-navBtn {
     display: none;
   }
-
 }
 * {
   font-family: "Noto Sans Lao", sans-serif;
