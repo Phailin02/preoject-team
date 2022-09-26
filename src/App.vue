@@ -2,18 +2,9 @@
   <div class="body">
     <v-app>
     
-        <NavBar/>
- 
-
-   <p>Hello Annie</p>
-   <h1>heo</h1>
-
-   <p>Hello Annie</p>
-
-
-
+      <NavBar/>
       <router-view/>
-   <FooTer/>
+      <FooTer/>
      
     </v-app>
   </div>
