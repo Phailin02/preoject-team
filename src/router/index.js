@@ -41,7 +41,7 @@ const routes = [
     path: '/aboutus',
     name: 'aboutus',
     component: () => import('../views/Aboutus.vue')
-  }
+  },
 
 //detail news page
 {

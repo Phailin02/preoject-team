@@ -1,18 +1,10 @@
 <template>
   <div class="body">
     <v-app>
-    
-<<<<<<< HEAD
       <NavBar/>
-=======
         <NavBar/>
- 
-
    <!-- <p>Hello Annie</p>
    <h1>heo</h1> -->
-
-
->>>>>>> nii
       <router-view/>
       <FooTer/>
      
