@@ -5,8 +5,8 @@
         <NavBar/>
  
 
-   <p>Hello Annie</p>
-   <h1>heo</h1>
+   <!-- <p>Hello Annie</p>
+   <h1>heo</h1> -->
 
 
       <router-view/>

@@ -64,9 +64,7 @@
       </div>
       <div class="col5" align="center" justify="center">
         <h4>ຕິດຕາມພວກເຮົາ</h4>
-        <a target="blank" href="https://www.gmail.com/">
-          <v-icon size="40px" class="pa-1">mdi-email</v-icon>
-        </a>
+    
 
         <a target="blank" href="https://www.facebook.com/"
           ><v-icon size="40px" class="pa-1">mdi-facebook</v-icon></a
@@ -161,6 +159,6 @@ h4 {
   text-align: center;
 }
 .col5 a{
-  text-decoration: none;
+  text-decoration:none;
 }
 </style>
