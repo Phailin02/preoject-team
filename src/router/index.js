@@ -36,8 +36,19 @@ const routes = [
     name: 'contact',
     component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
   },
-]
 
+//detail news page
+{
+  path: '/detail1',
+  name: 'detail1',
+  component: () => import('../views/NewsDetail/detail1.vue')
+},
+{
+  path: '/detail2',
+  name: 'detail2',
+  component: () => import('../views/NewsDetail/detail2.vue')
+},
+]
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,

@@ -195,263 +195,136 @@
         </div>
       </v-col> -->
 
-      <v-sheet
-    class="mx-auto"
-    elevation="8"
-    max-width="1135"
-    height="400"
-  >
-    <v-slide-group
-      v-model="model"
-      class="pa-4"
-      active-class="primary"
-      show-arrows
-    >
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
+      <v-sheet class="mx-auto" elevation="8" max-width="1135" height="400">
+        <v-slide-group
+          v-model="model"
+          class="pa-4"
+          active-class="primary"
+          show-arrows
         >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
+          <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-card class="ma-4" height="330" width="300" @click="toggle">
+              <template slot="progress">
+                <v-progress-linear
+                  color="deep-purple"
+                  height="10"
+                  indeterminate
+                ></v-progress-linear>
+              </template>
 
-                    <v-img
-                      height="200"
-                      src="../assets/news/new4.png"
-                    ></v-img>
+              <v-img height="200" src="../assets/news/new4.png"></v-img>
 
-                   
+              <v-card-text>
+                <div>
+                  Small plates, salads & sandwiches - an intimate setting with
+                  12 indoor seats plus patio seating.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-slide-item>
+          <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-card class="ma-4" height="330" width="300" @click="toggle">
+              <template slot="progress">
+                <v-progress-linear
+                  color="deep-purple"
+                  height="10"
+                  indeterminate
+                ></v-progress-linear>
+              </template>
 
-                    <v-card-text>
-                      
+              <v-img height="200" src="../assets/Banner1 1.png"></v-img>
 
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
+              <v-card-text>
+                <div>
+                  Small plates, salads & sandwiches - an intimate setting with
+                  12 indoor seats plus patio seating.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-slide-item>
+          <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-card class="ma-4" height="330" width="300" @click="toggle">
+              <template slot="progress">
+                <v-progress-linear
+                  color="deep-purple"
+                  height="10"
+                  indeterminate
+                ></v-progress-linear>
+              </template>
 
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
+              <v-img height="200" src="../assets/banner 2 1.png"></v-img>
 
-                    <v-img
-                      height="200"
-                      src="../assets/Banner1 1.png"
-                    ></v-img>
+              <v-card-text>
+                <div>
+                  Small plates, salads & sandwiches - an intimate setting with
+                  12 indoor seats plus patio seating.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-slide-item>
+          <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-card class="ma-4" height="330" width="300" @click="toggle">
+              <template slot="progress">
+                <v-progress-linear
+                  color="deep-purple"
+                  height="10"
+                  indeterminate
+                ></v-progress-linear>
+              </template>
 
-                   
+              <v-img height="200" src="../assets/news/new1.png"></v-img>
 
-                    <v-card-text>
-                      
+              <v-card-text>
+                <div>
+                  Small plates, salads & sandwiches - an intimate setting with
+                  12 indoor seats plus patio seating.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-slide-item>
+          <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-card class="ma-4" height="330" width="300" @click="toggle">
+              <template slot="progress">
+                <v-progress-linear
+                  color="deep-purple"
+                  height="10"
+                  indeterminate
+                ></v-progress-linear>
+              </template>
 
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
+              <v-img height="200" src="../assets/news/new2.png"></v-img>
 
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
+              <v-card-text>
+                <div>
+                  Small plates, salads & sandwiches - an intimate setting with
+                  12 indoor seats plus patio seating.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-slide-item>
+          <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-card class="ma-4" height="330" width="300" @click="toggle">
+              <template slot="progress">
+                <v-progress-linear
+                  color="deep-purple"
+                  height="10"
+                  indeterminate
+                ></v-progress-linear>
+              </template>
 
-                    <v-img
-                      height="200"
-                      src="../assets/banner 2 1.png"
-                    ></v-img>
+              <v-img height="200" src="../assets/news/new3.png"></v-img>
 
-                   
+              <v-card-text>
+                <div>
+                  Small plates, salads & sandwiches - an intimate setting with
+                  12 indoor seats plus patio seating.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-slide-item>
+        </v-slide-group>
+      </v-sheet>
 
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
-
-                    <v-img
-                      height="200"
-                      src="../assets/news/new1.png"
-                    ></v-img>
-
-                   
-
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
-
-                    <v-img
-                      height="200"
-                      src="../assets/news/new2.png"
-                    ></v-img>
-
-                   
-
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-      <v-slide-item
-        v-for="n in 1"
-        :key="n"
-        v-slot="{  toggle }"
-      >
-        <v-card
-         
-          class="ma-4"
-          height="330"
-          width="300"
-          @click="toggle"
-        >
-        <template slot="progress">
-                      <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate
-                      ></v-progress-linear>
-                    </template>
-
-                    <v-img
-                      height="200"
-                      src="../assets/news/new3.png"
-                    ></v-img>
-
-                   
-
-                    <v-card-text>
-                      
-
-                      
-                      <div>
-                        Small plates, salads & sandwiches - an intimate setting
-                        with 12 indoor seats plus patio seating.
-                      </div>
-                    </v-card-text>
-
-                    
-        </v-card>
-      </v-slide-item>
-    </v-slide-group>
-  </v-sheet>
-
-
-    
       <v-row justify="center" style="padding: 50px">
         <v-btn class="pa-8" color="#297FCA">
           <h1 class="white--text" style="font-weight: 500">ເບິ່ງຂ່າວທັງໝົດ></h1>
@@ -489,8 +362,8 @@
 <!-- <script src="../js/swiper-bundle.min.js"></script> -->
 <!-- JavaScript -->
 <!-- <script src="../js/script.js"></script> -->
-  
-<script >
+
+<script>
 // import "../js/script";
 import "../js/swiper-bundle.min.js";
 import "../css/swiper-bundle.min.css";
@@ -523,7 +396,6 @@ export default {
 };
 </script>
 <style>
-
 v-col {
   padding: 20px;
 }
@@ -714,7 +586,6 @@ h2 {
   .swiper-navBtn {
     display: none;
   }
-
 }
 * {
   font-family: "Noto Sans Lao", sans-serif;
