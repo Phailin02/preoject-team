@@ -45,14 +45,34 @@ const routes = [
 
 //detail news page
 {
-  path: '/detail1',
-  name: 'detail1',
-  component: () => import('../views/NewsDetail/detail1.vue')
+  path: '/new1',
+  name: 'new1',
+  component: () => import('../views/NewsDetail/new1.vue')
 },
 {
-  path: '/detail2',
-  name: 'detail2',
-  component: () => import('../views/NewsDetail/detail2.vue')
+  path: '/new2',
+  name: 'new2',
+  component: () => import('../views/NewsDetail/new2.vue')
+},
+{
+  path: '/new3',
+  name: 'new3',
+  component: () => import('../views/NewsDetail/new3.vue')
+},
+{
+  path: '/new4',
+  name: 'new4',
+  component: () => import('../views/NewsDetail/new4.vue')
+},
+{
+  path: '/new5',
+  name: 'new5',
+  component: () => import('../views/NewsDetail/new5.vue')
+},
+{
+  path: '/new6',
+  name: 'new6',
+  component: () => import('../views/NewsDetail/new6.vue')
 },
 ]
 const router = new VueRouter({
