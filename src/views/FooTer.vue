@@ -1,26 +1,19 @@
 <template>
   <section>
-    <div class="row">
-      
-     
+    <div class="row" style="padding: 50px 0px">
       <div class="col1" style="padding: 30px 50px">
-       
-        
-        <router-link to="/" style="text-decoration: none"> 
+        <router-link to="/" style="text-decoration: none">
           <v-img
-          align="center"
-          justify="center"
-          alt="logo"
-          src="../assets/Rectangle 97.png"
-          width="120px"
-          
-        />
-          <label class="logo" style="font-weight: 500" >ສະຫະພັນຄົນຫູໜວກ</label>
+            align="center"
+            justify="center"
+            alt="logo"
+            src="../assets/Rectangle 97.png"
+            width="120px"
+          />
+          <label class="logo" style="font-weight: 500">ສະຫະພັນຄົນຫູໜວກ</label>
         </router-link>
-       
-
       </div>
-   
+
       <div class="col2">
         <h4>ພວກເຮົາເຮັດຫຍັງ</h4>
         <p>ສະມາຊິກຂອງພວກເຮົາ</p>
@@ -64,7 +57,6 @@
       </div>
       <div class="col5" align="center" justify="center">
         <h4>ຕິດຕາມພວກເຮົາ</h4>
-    
 
         <a target="blank" href="https://www.facebook.com/"
           ><v-icon size="40px" class="pa-1">mdi-facebook</v-icon></a
@@ -103,6 +95,10 @@ export default {
 </script>
 
 <style scoped>
+  p {
+    font-size: 18px;
+  }
+
 * {
   padding: 0;
   margin: 0;
@@ -122,7 +118,7 @@ p a {
 }
 label.logo {
   color: #333335;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -139,6 +135,7 @@ h4 {
   font-weight: 500;
   margin-bottom: 15px;
   color: #297fca;
+  font-size: 18px;
 }
 .REVIEWS p a .v-icon {
   font-size: 50px;
@@ -158,7 +155,7 @@ h4 {
   width: auto;
   text-align: center;
 }
-.col5 a{
-  text-decoration:none;
+.col5 a {
+  text-decoration: none;
 }
 </style>

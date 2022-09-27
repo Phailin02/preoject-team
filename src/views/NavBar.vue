@@ -1,16 +1,13 @@
 <template>
-  <div id="app" >
-    
-    <nav class="dark--text body" >
+  <div id="app">
+    <nav class="dark--text body">
       <v-app-bar
-      
-  app
-
-
+        app
         color="#297FCA"
-        elevation="6"
-        style="padding: 0px 50px"
+        elevation=""
+        style="padding: 0px 100px"
         tile
+        height="100px"
       >
         <router-link
           style="color: blue"
@@ -28,40 +25,36 @@
               :key="i"
               :src="img.src"
               contain
-              width="60px"
+              width="100px"
               class="ma-3"
             />
-            
-            <span> ສະຫະພັນຄົນຫູໜວກ </span>
+
+            <h class="text-h5 white--text" ><span> ສະຫະພັນຄົນຫູໜວກ </span></h>
           </v-toolbar-title>
         </router-link>
 
         <v-spacer></v-spacer>
-        
+
         <ul class="nav">
-         
-            <li>
-            <router-link tag="a" to="/"><span>ກ່ຽວກັບ</span></router-link>
+          <li>
+            <router-link class="text-h6" tag="a" to="/"><span>ກ່ຽວກັບ</span></router-link>
           </li>
           <li>
-            <router-link tag="a" to="/news"><span>ຂ່າວ & ເຫດການ</span></router-link>
+            <router-link class="text-h6" tag="a" to="/news"
+              ><span>ຂ່າວ & ເຫດການ</span></router-link
+            >
           </li>
           <li>
-            <router-link tag="a" to="/contact"><span>ຕິດຕໍ່</span></router-link>
+            <router-link class="text-h6" tag="a" to="/contact"><span>ຕິດຕໍ່</span></router-link>
           </li>
           <li>
-            <router-link tag="a" to="/donate"><span>ບໍລິຈາກ</span></router-link>
+            <router-link  tag="a" to="/donate"><v-btn outlined color="white" class="text-h6 px-10" ><span>ບໍລິຈາກ</span></v-btn></router-link>
           </li>
-          
-         
         </ul>
-
-
       </v-app-bar>
     </nav>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 li {
@@ -83,7 +76,6 @@ nav {
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
-    
   }
 }
 nav ul {
@@ -152,8 +144,8 @@ nav ul li a {
   font-family: "Noto Sans Lao", sans-serif;
 }
 </style>
-  
-  <script>
+
+<script>
 export default {
   name: "NavbarView",
   setup() {},
@@ -162,39 +154,10 @@ export default {
     return {
       imgs: [
         {
-          src:  require("../assets/Rectangle 97.png"),
+          src: require("../assets/Rectangle 97.png"),
         },
       ],
-      // user: null,
-      // token: this.$store.state["users/user"],
-      items: [{ title1: "ຂໍ້ມູນສວ່ນຕົວ" }, { title2: "ອອກຈາກລະບົບ" }],
     };
-  },
-  watch: {
-    token(newVale, oldvale) {
-      console.log("sdfhsadfhasdgfjasdjkf");
-    },
-  },
-  beforeCreate() {
-    this.$store.dispatch("users/getData");
-    // this.user = ;
-  },
-  created() {
-    console.log(55555555, !this.user);
-  },
-  methods: {
-    Logout() {
-      localStorage.clear();
-      window.location.reload();
-    },
-  },
-  computed: {
-    user() {
-      return this.$store.getters["users/GetUser"];
-    },
-    userLoadding() {
-      return this.$store.getters["users/loadding"];
-    },
   },
 };
 </script>

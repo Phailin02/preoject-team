@@ -6,15 +6,11 @@
           <v-col class="txt-color font-weight-bold text-h4"
             ><span>ເດັກນ້ອຍ Usher</span></v-col
           >
-          <v-col>
-            <v-text-field
-              v-model="search"
-              append-icon="mdi-magnify"
-              label="ຄົ້ນຫາ ຫົວຂໍ້, ວັນທີ່..."
-            ></v-text-field
-          ></v-col>
+          <v-col class="d-flex justify-end align-end px-5" >
+            <span class="txt-color text-subtitle">16/8/2022</span>
+          </v-col>
         </v-row>
-        <div>
+        <div class="mt-5">
           <v-img
             alt="news1"
             src="https://media.discordapp.net/attachments/899150665358655518/1023842882391654461/Rectangle_92c.png"
@@ -40,32 +36,34 @@
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ວິດີໂອຈະສະແດງໃຫ້ຄອບຄົວເຫັນສິ່ງທີ່ຄາດຫວັງໃນມື້,ການທົດສອບໃດທີ່ກ່ຽວຂ້ອງ,ການທົດສອບແຕ່ລະຄົນກໍາລັງຊອກຫາຫຍັງ,
               ແລະບາງຍຸດທະສາດເພື່ອເຮັດໃຫ້ປະສົບການທີ່ມີຄວາມສຸກຫຼາຍສໍາລັບທຸກຄົນທີ່ກ່ຽວຂ້ອງ.
-              <br />
+            </p>
+            <p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ພວກເຮົາໄດ້ສໍາພາດຜູ້ຊ່ຽວຊານສອງຄົນໃນມື້,
               ທ່ານດຣ Jon Ruddle, ແພດຫມໍຕາໃນເດັກແລະ Sandra Staffieri, Pediatric
               Orthoptist.
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ເຂົາເຈົ້າທັງສອງມີຄວາມເອື້ອເຟື້ອເພື່ອແຜ່ກັບເວລາ
               ແລະຂໍ້ມູນຂອງເຂົາເຈົ້າ, ພວກເຮົາຈະໃຊ້ສຽງເພີ່ມເຕີມເປັນ podcast
-              ໃນເດືອນຂ້າງໜ້າ.<br />
-              ເປົ້າໝາຍລວມຂອງພວກເຮົາຂອງວິດີໂອການສຶກສາແມ່ນ:
-              <br />
-              <span class="pa-5"
-                >.
-                ເພື່ອສຶກສາອົບຮົມພໍ່ແມ່ແລະຜູ້ເບິ່ງແຍງເດັກທີ່ສູນເສຍການໄດ້ຍິນຍ້ອນໂຣກUsherກ່ຽວກັບລັກສະນະສະເພາະແລະສິ່ງທ້າທາຍຂອງສະພາບການທີ່ມີການປ່ຽນແປງຕ່າງໆ.</span
-              >
+              ໃນເດືອນຂ້າງໜ້າ.
             </p>
-            <p class="pa-5">
-              .
-              ເພື່ອປັບປຸງຄວາມຫມັ້ນໃຈຂອງພໍ່ແມ່ແລະຜູ້ເບິ່ງແຍງເດັກທີ່ສູນເສຍການໄດ້ຍິນຍ້ອນໂຣກ
-              Usher<br />
-              ເພື່ອສະຫນັບສະຫນູນໃນນາມຂອງເດັກນ້ອຍຂອງເຂົາເຈົ້າກ່ຽວກັບລັກສະນະສະເພາະແລະສິ່ງທ້າທາຍຂອງສະພາບໃນການຕັ້ງຄ່າຕ່າງໆ.<br /><br />
-              . ເພື່ອສ້າງຈິດສໍານຶກເຖິງສິ່ງທ້າທາຍທີ່ຄອບຄົວ Usher<br />
-              ປະເຊີນແລະເຮັດການປ່ຽນແປງທີ່ຈະຫຼຸດຜ່ອນຄວາມບໍ່ສະເຫມີພາບທາງດ້ານສຸຂະພາບຈິດແລະສະຫວັດດີການໃນຊຸມຊົນ
-              usher.<br /><br />
-              . ເພື່ອສ້າງຄວາມເຂັ້ມແຂງໃຫ້ເດັກນ້ອຍທີ່ມີໂຣກ Usher,
-              ຄອບຄົວຂອງພວກເຂົາແລະຜູ້ທີ່ສະຫນັບສະຫນູນພວກເຂົາ.
-            </p>
+            <p>ເປົ້າໝາຍລວມຂອງພວກເຮົາຂອງວິດີໂອການສຶກສາແມ່ນ:</p>
+            <div class="pl-5">
+              <p>
+                .
+                ເພື່ອສຶກສາອົບຮົມພໍ່ແມ່ແລະຜູ້ເບິ່ງແຍງເດັກທີ່ສູນເສຍການໄດ້ຍິນຍ້ອນໂຣກUsherກ່ຽວກັບລັກສະນະສະເພາະແລະສິ່ງທ້າທາຍຂອງສະພາບການທີ່ມີການປ່ຽນແປງຕ່າງໆ.
+
+                <br />
+                .
+                ເພື່ອປັບປຸງຄວາມຫມັ້ນໃຈຂອງພໍ່ແມ່ແລະຜູ້ເບິ່ງແຍງເດັກທີ່ສູນເສຍການໄດ້ຍິນຍ້ອນໂຣກ
+                Usher<br />
+                ເພື່ອສະຫນັບສະຫນູນໃນນາມຂອງເດັກນ້ອຍຂອງເຂົາເຈົ້າກ່ຽວກັບລັກສະນະສະເພາະແລະສິ່ງທ້າທາຍຂອງສະພາບໃນການຕັ້ງຄ່າຕ່າງໆ.<br /><br />
+                . ເພື່ອສ້າງຈິດສໍານຶກເຖິງສິ່ງທ້າທາຍທີ່ຄອບຄົວ Usher<br />
+                ປະເຊີນແລະເຮັດການປ່ຽນແປງທີ່ຈະຫຼຸດຜ່ອນຄວາມບໍ່ສະເຫມີພາບທາງດ້ານສຸຂະພາບຈິດແລະສະຫວັດດີການໃນຊຸມຊົນ
+                usher.<br /><br />
+                . ເພື່ອສ້າງຄວາມເຂັ້ມແຂງໃຫ້ເດັກນ້ອຍທີ່ມີໂຣກ Usher,
+                ຄອບຄົວຂອງພວກເຂົາແລະຜູ້ທີ່ສະຫນັບສະຫນູນພວກເຂົາ.
+              </p>
+            </div>
           </span>
           <span class="d-flex justify-end txt-color text-caption"
             >16/8/2022</span
@@ -76,28 +74,33 @@
           />
         </div>
 
-        <v-row class="fill-height" align="center">
-          <v-col v-for="(item, i) in items" :key="i" cols="6" sm="4">
-            <v-img :src="item.src" class="display-2 white--text align-end pa-5">
-              <p class="text-h5">
-                <span>{{ item.title }}</span>
-              </p>
-              <v-btn
-                color="#246299"
-                tag="a"
-                :href="item.href"
-                class="text-h6 white--text text-decoration-none"
-                ><span>{{ item.btn }}</span></v-btn
+        <div>
+          <v-row>
+            <v-col v-for="(item, i) in items" :key="i" cols="4">
+              <v-img
+                :src="item.src"
+                class="display-2 white--text align-end pa-5"
               >
-            </v-img></v-col
-          >
-        </v-row>
+                <p class="text-h5">
+                  <span>{{ item.title }}</span>
+                </p>
+                <v-btn
+                  color="#246299"
+                  tag="a"
+                  :href="item.href"
+                  class="text-h6 white--text text-decoration-none"
+                  ><span>{{ item.btn }}</span></v-btn
+                >
+              </v-img></v-col
+            >
+          </v-row>
+        </div>
         <div justify="center" align="center" class="py-15">
           <v-btn
             color="#246299"
             tag="a"
             href="/news"
-            class="text-decoration-none text-h5 white--text"
+            class="text-decoration-none text-h6 white--text py-5"
           >
             <span> ເບິ່ງເພີ່ມເຕີມ </span>
           </v-btn>
@@ -141,7 +144,7 @@ export default {
   color: #246299;
 }
 .txt-size {
-  font-size: 22px;
+  font-size: 20px;
   color: #5b5b5b;
 }
 </style>

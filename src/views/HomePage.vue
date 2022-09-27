@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <slide />
+    <Slide/>
     <v-container>
       <v-row>
         <v-col style="padding-top: 80px; padding-bottom: 75px">
@@ -219,7 +219,7 @@
                 </v-card-text>
               </v-card>
             </v-slide-item>
-            <v-slide-item v-for="n in 1" :key="n">
+            <v-slide-item>
               <v-card class="ma-4" height="330" width="300">
                 <template slot="progress">
                   <v-progress-linear
@@ -241,7 +241,7 @@
                 </v-card-text>
               </v-card>
             </v-slide-item>
-            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-slide-item v-slot="{ toggle }">
               <v-card class="ma-4" height="330" width="300" @click="toggle">
                 <template slot="progress">
                   <v-progress-linear
@@ -262,7 +262,7 @@
                 </v-card-text>
               </v-card>
             </v-slide-item>
-            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-slide-item v-slot="{ toggle }">
               <v-card class="ma-4" height="330" width="300" @click="toggle">
                 <template slot="progress">
                   <v-progress-linear
@@ -282,7 +282,7 @@
                 </v-card-text>
               </v-card>
             </v-slide-item>
-            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-slide-item v-slot="{ toggle }">
               <v-card class="ma-4" height="330" width="300" @click="toggle">
                 <template slot="progress">
                   <v-progress-linear
@@ -302,7 +302,7 @@
                 </v-card-text>
               </v-card>
             </v-slide-item>
-            <v-slide-item v-for="n in 1" :key="n" v-slot="{ toggle }">
+            <v-slide-item v-slot="{ toggle }">
               <v-card class="ma-4" height="330" width="300" @click="toggle">
                 <template slot="progress">
                   <v-progress-linear
@@ -368,32 +368,10 @@
 // import "../js/script";
 import "../js/swiper-bundle.min.js";
 import "../css/swiper-bundle.min.css";
-import Slide from "../components/Slide.vue";
+import Slide from "@/components/Slide.vue";
 export default {
-  name: "App",
-  name: "SliderImage",
-  data() {
-    return {
-      items: [
-        {
-          src: require("../assets/pic2.png"),
-          title: "Wellcome",
-          description: "Keolanee hotel",
-        },
-        {
-          src: "https://i.pinimg.com/564x/f3/22/16/f3221654dffe218d2502fadaa79c40f1.jpg",
-          title: "Wellcome 2",
-          description: "Keolanee hotel",
-        },
-        {
-          src: "https://media.discordapp.net/attachments/826834529435648000/1007140013152153640/banner-2.png?width=1208&height=662",
-          title: "Wellcome 3",
-          description: "Keolanee hotel",
-        },
-      ],
-    };
-  },
-  components: { Slide },
+    name: "App",
+    components: { Slide }
 };
 </script>
 <style>
@@ -553,9 +531,6 @@ h2 {
 
 .swiper-navBtn:hover {
   color: dodgerblue;
-}
-
-.swiper-navBtn:before {
 }
 
 .swiper-navBtn:after {
