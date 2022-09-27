@@ -230,7 +230,6 @@
                 </template>
 
                 <v-img height="200" src="../assets/Banner1 1.png"></v-img>
-
                 <v-card-text>
                   <div>
                     ເປັນການກຸສົນສະໜັບສະໜູນນັກຮົບເກົ່າ ຂອງ​ກອງ​ທັບ​ອາ​ວຸດ​,
