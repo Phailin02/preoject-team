@@ -13,7 +13,6 @@
 
 <script>
 import NavBar from './views/NavBar.vue';
-import DoNate from './views/DoNate.vue';
 import FooTer from './views/FooTer.vue';
 
 
@@ -24,7 +23,7 @@ export default {
       //
     }
   },
-  components: { NavBar, DoNate, FooTer },
+  components: { NavBar, FooTer },
 };
 </script>
 <style >

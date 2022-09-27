@@ -1,37 +1,14 @@
 <template>
   <div style="padding: 0px 0px; background-color: #2a2a2a">
     <v-main>
-      <v-carousel cycle>
-        
+      <v-carousel height="100%">
         <!--Src image-->
-        <v-carousel-item
-          v-for="(item, i) in items"
-          :key="i"
-          :src="item.src"
-          gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,0.7)"
-        >
+        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
           <!--title-->
-          <v-row class="fill-height" justify="" align="center">
+          <v-row class="fill-height" align="end">
             <v-col>
               <div class="display-2 white--text">
-                <h6 class="font-weight-light">{{ item.description }}</h6>
-                <h2>{{ item.title }}</h2>
-                <!-- <v-row justify="space-between">
-                  <v-col cols="12" md="6" lg="3">
-                    <v-btn outline block class="primary">1</v-btn>
-                  </v-col>
-
-                  <v-col cols="12" md="6" lg="3">
-                    <v-btn outline block class="primary">1</v-btn>
-                  </v-col>
-                </v-row> -->
-
-                <!-- <p style="font-weight: 300">
-                  ທີ່ມູນນິທິຄົນຫູໜວກ,ສະຫວັດດີການແລະຄວາມສະເໝີພາບແມ່ນຢູ່ແຖວໜ້າຂອງສິ່ງທີ່ພວກເຮົາກຳລັງເຮັດວຽກຮ່ວມກັນ.ພວກ​ເຮົາ​ເຮັດ​ວຽກ​ຮ່ວມ​ກັບ​ຄົນ​ຫູ​ໜວກ
-                  ແລະ​ຫູ​ແຂງ ເພື່ອ​ອຳ​ນວຍ​ຄວາມ​ສະ​ດວກ: ການເຂົ້າເຖິງ, ການຮັບຮູ້,
-                  ການບົ່ງມະຕິ, ການປິ່ນປົວແລະການປ້ອງກັນ.
-                  ຮຽນຮູ້ເພີ່ມເຕີມກ່ຽວກັບຜົນກະທົບທາງບວກທີ່ພວກເຮົາມີແລະເຂົ້າຮ່ວມກັບພວກເຮົາໃນການນໍາເອົາການປ່ຽນແປງໃນທາງບວກ.
-                </p> -->
+                <p>{{item.title}}</p>
               </div>
             </v-col>
           </v-row>
@@ -49,20 +26,22 @@ export default {
     return {
       items: [
         {
-          src: require("../assets/image 11.png"),
-          title: "Wellcome",
-          description: " ທີ່ມູນນິທິຄົນຫູໜວກ,ສະຫວັດດີການແລະຄວາມສະເໝີພາບແມ່ນຢູ່ແຖວໜ້າຂອງສິ່ງທີ່ພວກເຮົາກຳລັງເຮັດວຽກຮ່ວມກັນ.ພວກ​ເຮົາ​ເຮັດ​ວຽກ​ຮ່ວມ​ກັບ​ຄົນ​ຫູ​ໜວກ ແລະ​ຫູ​ແຂງ ເພື່ອ​ອຳ​ນວຍ​ຄວາມ​ສະ​ດວກ: ການເຂົ້າເຖິງ, ການຮັບຮູ້, ການບົ່ງມະຕິ, ການປິ່ນປົວແລະການປ້ອງກັນ ຮຽນຮູ້ເພີ່ມເຕີມກ່ຽວກັບຜົນກະທົບທາງບວກທີ່ພວກເຮົາມີແລະເຂົ້າຮ່ວມກັບພວກເຮົາໃນການນໍາເອົາການປ່ຽນແປງໃນທາງບວກ.",
+          src: "https://media.discordapp.net/attachments/899150665358655518/1024173975477166131/Property_1Banner_Slide_1.png?width=899&height=400",
+          title:"",
         },
         {
-          src: require("../assets/Banner1 1.png"),
-          title: "Foundation of the Deaf",
+          src: "https://media.discordapp.net/attachments/899150665358655518/1024176762449559632/Property_1Banner_Slide_2.png?width=899&height=400",
         },
         {
-          src: require("../assets/image 12.png"),
-          title: "ຄົນຫູໜວກໃນສັງຄົມ",
+          src: "https://media.discordapp.net/attachments/899150665358655518/1024176762780921876/Property_1Banner_Slide_3.png?width=899&height=400",
         },
       ],
     };
   },
 };
 </script>
+<style>
+  .col-sm-4{
+    margin-left: 10%;
+  }
+</style>

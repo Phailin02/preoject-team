@@ -10,12 +10,7 @@
             ></v-col
           >
           <v-col>
-            <v-text-field
-              v-model="search"
-              append-icon="mdi-magnify"
-              label="ຄົ້ນຫາ ຫົວຂໍ້, ວັນທີ່..."
-            ></v-text-field
-          ></v-col>
+          </v-col>
         </v-row>
         <div>
           <v-row class="mt-5">
@@ -76,8 +71,9 @@
           />
         </div>
 
-        <v-row class="fill-height" align="center">
-          <v-col v-for="(item, i) in items" :key="i" cols="6" sm="4">
+        <div >
+          <v-row >
+          <v-col v-for="(item, i) in items" :key="i" cols="4">
             <v-img :src="item.src" class="display-2 white--text align-end pa-5">
               <p class="text-h5">
                 <span>{{ item.title }}</span>
@@ -92,16 +88,18 @@
             </v-img></v-col
           >
         </v-row>
+        </div>
         <div justify="center" align="center" class="py-15">
           <v-btn
             color="#246299"
             tag="a"
             href="/news"
-            class="text-decoration-none text-h5 white--text"
+            class="text-decoration-none text-h6 white--text py-5"
           >
             <span> ເບິ່ງເພີ່ມເຕີມ </span>
           </v-btn>
         </div>
+
       </v-container>
     </v-main>
   </v-app>
@@ -141,7 +139,7 @@ export default {
   color: #246299;
 }
 .txt-size {
-  font-size: 21px;
+  font-size: 20px;
   color: #5b5b5b;
 }
 </style>
