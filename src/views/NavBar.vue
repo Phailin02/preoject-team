@@ -37,7 +37,7 @@
 
         <ul class="nav">
           <li>
-            <router-link class="text-h6" tag="a" to="/"><span>ກ່ຽວກັບ</span></router-link>
+            <router-link class="text-h6" tag="a" to="/aboutus"><span>ກ່ຽວກັບ</span></router-link>
           </li>
           <li>
             <router-link class="text-h6" tag="a" to="/news"
