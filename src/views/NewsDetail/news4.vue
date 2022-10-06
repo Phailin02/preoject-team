@@ -18,14 +18,14 @@
             <p>ຕາຕະລາງ decibel ຕໍ່ໄປນີ້ໃຫ້ລະດັບສຽງໂດຍປະມານຂອງບາງສຽງທົ່ວໄປ.</p>
           </div>
           <v-row class="mt-13">
-            <v-col cols="8">
+            <v-col cols="7">
               <v-img
                 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
                 alt="news1"
                 src="https://media.discordapp.net/attachments/899150665358655518/1023974870884819004/image_14.png"
               ></v-img
             ></v-col>
-            <v-col class="txt" cols="4">
+            <v-col class="txt" cols="5">
               <p>
                 ຕາຕະລາງdecibelສະແດງໃຫ້ເຫັນຫຼາຍສຽງທີ່ມີປະສົບການທົ່ວໄປໃນເຮືອນ,ຢູ່ບ່ອນເຮັດວຽກຫຼືໃນກິດຈະກໍາການພັກຜ່ອນທີ່ສາມາດເປັນອັນຕະລາຍ.
               </p>

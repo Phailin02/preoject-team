@@ -2,7 +2,27 @@
   <v-app>
     <div>
       <v-content>
-        <v-img max-height="" src="../assets/Rectangle 77.png"> </v-img>
+        <v-img
+          max-height=""
+          src="../assets/Rectangle 77.png"
+          gradient="to top right, rgb(0, 191, 255,.33), rgba(25,32,72,0.7)"
+        >
+          <v-row class="fill-height" align="end">
+            <v-col>
+              <div class="display-1 white--text">
+                <v-container class="px-15">
+                  <h class="text-h3 pa-2"><span>ຂ່າວ & ເຫດການ</span></h>
+                  <v-col cols="6" class="text-h6">
+                    <span>
+                      ອ່ານ​ກ່ຽວ​ກັບ​ຂ່າວ​ດີ​ແລະ​ກິດ​ຈະ​ກໍາ​ການ​ລະດົມ​ທຶນ​ທີ່​ສໍາ​ຄັນ​ເພື່ອ​ຊ່ວຍ​
+                      ໃຫ້​ພວກ​ເຮົາ​ສະ​ຫນັບ​ສະ​ຫນູນ​ຄົນ​ຫູ​ຫນວກ​
+                    </span>
+                  </v-col>
+                </v-container>
+              </div>
+            </v-col>
+          </v-row>
+        </v-img>
       </v-content>
       <v-container class="px-10 mt-10">
         <v-row>
@@ -17,7 +37,7 @@
             ></v-text-field>
 
             <v-card :loading="loading" class="mx-auto mt-10">
-              <v-img height="250" src="../assets/news/new1.png"></v-img>
+              <v-img height="250" src="../assets/news/news1.png"></v-img>
 
               <v-card-title class="txttop text-h5"
                 ><sapn>ເດັກນ້ອຍ Usher</sapn></v-card-title
@@ -32,7 +52,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new1"
+                  to="/news1"
                   class="px-5 ml-2 mb-3 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -57,7 +77,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new5"
+                  to="/news5"
                   class="px-5 mb-3 ml-2 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -82,7 +102,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new5"
+                  to="/news5"
                   class="px-5 mb-3 ml-2 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -93,7 +113,7 @@
             </v-card>
 
             <v-card :loading="loading" class="mx-auto my-12">
-              <v-img height="250" src="../assets/news/new1.png"></v-img>
+              <v-img height="250" src="../assets/news/news1.png"></v-img>
 
               <v-card-title class="txttop text-h5"
                 ><sapn>ເດັກນ້ອຍ Usher</sapn></v-card-title
@@ -109,7 +129,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new1"
+                  to="/news1"
                   class="px-5 mb-3 ml-2 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -119,7 +139,7 @@
               </v-card-actions>
             </v-card>
           </v-col>
-          <v-col cols="6" class=" px-10">
+          <v-col cols="6" class="px-10">
             <v-card :loading="loading" class="mx-auto my-12">
               <v-img height="250" src="../assets/news/new4.png"></v-img>
 
@@ -135,7 +155,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new2"
+                  to="/news2"
                   class="px-5 mb-3 ml-2 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -160,7 +180,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new4"
+                  to="/news4"
                   class="px-5 mb-3 ml-2 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -184,7 +204,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new6"
+                  to="/news6"
                   class="px-5 mb-3 ml-2 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -209,7 +229,7 @@
               <v-card-actions>
                 <v-btn
                   tag="a"
-                  to="/new5"
+                  to="/news5"
                   class="px-5 mb-3 ml-2 text-body-1 white--text"
                   color="#246299"
                   @click="reserve"
@@ -221,7 +241,7 @@
           </v-col>
         </v-row>
 
-        <div class="text-center">
+        <div class="text-center mb-10">
           <v-pagination
             v-model="page"
             :length="4"

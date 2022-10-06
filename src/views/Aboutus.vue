@@ -8,9 +8,11 @@
             class="d-inline-flex mx-auto px-15 mb-2 mt-10"
             color="#297FCA"
           >
-            <h1 class="white--text mb-1" style="font-weight: 500">
+            <h class="white--text mb-1 py-3 text-h4">
+             <span>
               Foundation of the Deaf
-            </h1>
+             </span>
+            </h>
           </v-card>
 
           <div class="pl-15 pr-15 pt-5 ma-10">
@@ -49,9 +51,11 @@
           </div>
           <div>
             <v-card tile class="d-inline-flex mx-auto px-15" color="#297FCA">
-              <h1 class="white--text mb-1" style="font-weight: 500">
-                ພວກເຮົາເຮັດຫຍັງແດ່?
-              </h1>
+              <h class="white--text mb-1 py-3 text-h4">
+             <span>
+              ພວກເຮົາເຮັດຫຍັງແດ່?
+             </span>
+            </h>
             </v-card>
           </div>
           <div class="pl-15 pr-15 pt-10 ma-10 txtp" style="color: #5b5b5b">
@@ -94,9 +98,11 @@
           </div>
           <div>
             <v-card tile class="d-inline-flex mx-auto px-15" color="#297FCA">
-              <h1 class="white--text mb-1" style="font-weight: 500">
-                ຜູ້ບໍລິຫານ & ສະມາຊິກ
-              </h1>
+              <h class="white--text mb-1 py-3 text-h4">
+             <span>
+              ຜູ້ບໍລິຫານ & ສະມາຊິກ
+             </span>
+            </h>
             </v-card>
           </div>
           <div class="pl-15 pr-15 pt-5 ma-5 text-center">

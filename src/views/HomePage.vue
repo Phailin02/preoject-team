@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <Slide/>
+    <Slide />
     <v-container>
       <v-row>
         <v-col style="padding-top: 80px; padding-bottom: 75px">
@@ -207,7 +207,7 @@
                   ></v-progress-linear>
                 </template>
 
-                <v-img height="200" src="../assets/news/new1.png"></v-img>
+                <v-img height="200" src="../assets/news/news1.png"></v-img>
 
                 <v-card-text>
                   <div>
@@ -272,7 +272,7 @@
                   ></v-progress-linear>
                 </template>
 
-                <v-img height="200" src="../assets/news/new1.png"></v-img>
+                <v-img height="200" src="../assets/news/news1.png"></v-img>
 
                 <v-card-text>
                   <div>
@@ -370,8 +370,8 @@ import "../js/swiper-bundle.min.js";
 import "../css/swiper-bundle.min.css";
 import Slide from "@/components/Slide.vue";
 export default {
-    name: "App",
-    components: { Slide }
+  name: "App",
+  components: { Slide },
 };
 </script>
 <style>

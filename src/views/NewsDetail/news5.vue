@@ -151,7 +151,7 @@ export default {
   color: #246299;
 }
 .txt-size {
-  font-size: 22px;
+  font-size: 20px;
   color: #5b5b5b;
 }
 </style>
